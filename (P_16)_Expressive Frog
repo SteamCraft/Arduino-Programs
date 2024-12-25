@@ -13,7 +13,7 @@ void setup()
 void loop() {
   lcd.setCursor(0, 0);             
   lcd.print("HELLO, PETER SIR");
-  lcd.print("Sorry Sorry :)");
+ 
   
   for (int j = 0; j < 100; j++) {  
     delay(1000);                   
