@@ -1,0 +1,169 @@
+
+#define NOTE_B0  31
+#define  NOTE_C1  33
+#define NOTE_CS1 35
+#define NOTE_D1  37
+#define NOTE_DS1 39
+#define  NOTE_E1  41
+#define NOTE_F1  44
+#define NOTE_FS1 46
+#define NOTE_G1  49
+#define  NOTE_GS1 52
+16#define NOTE_A1  55
+17#define NOTE_AS1 58
+18#define NOTE_B1  62
+19#define  NOTE_C2  65
+20#define NOTE_CS2 69
+21#define NOTE_D2  73
+22#define NOTE_DS2 78
+23#define  NOTE_E2  82
+24#define NOTE_F2  87
+25#define NOTE_FS2 93
+26#define NOTE_G2  98
+27#define  NOTE_GS2 104
+28#define NOTE_A2  110
+29#define NOTE_AS2 117
+30#define NOTE_B2  123
+31#define NOTE_C3  131
+32#define NOTE_CS3 139
+33#define NOTE_D3  147
+34#define  NOTE_DS3 156
+35#define NOTE_E3  165
+36#define NOTE_F3  175
+37#define NOTE_FS3  185
+38#define NOTE_G3  196
+39#define NOTE_GS3 208
+40#define NOTE_A3  220
+41#define  NOTE_AS3 233
+42#define NOTE_B3  247
+43#define NOTE_C4  262
+44#define NOTE_CS4  277
+45#define NOTE_D4  294
+46#define NOTE_DS4 311
+47#define NOTE_E4  330
+48#define  NOTE_F4  349
+49#define NOTE_FS4 370
+50#define NOTE_G4  392
+51#define NOTE_GS4  415
+52#define NOTE_A4  440
+53#define NOTE_AS4 466
+54#define NOTE_B4  494
+55#define  NOTE_C5  523
+56#define NOTE_CS5 554
+57#define NOTE_D5  587
+58#define NOTE_DS5  622
+59#define NOTE_E5  659
+60#define NOTE_F5  698
+61#define NOTE_FS5 740
+62#define  NOTE_G5  784
+63#define NOTE_GS5 831
+64#define NOTE_A5  880
+65#define NOTE_AS5  932
+66#define NOTE_B5  988
+67#define NOTE_C6  1047
+68#define NOTE_CS6 1109
+69#define  NOTE_D6  1175
+70#define NOTE_DS6 1245
+71#define NOTE_E6  1319
+72#define NOTE_F6  1397
+73#define NOTE_FS6 1480
+74#define NOTE_G6  1568
+75#define NOTE_GS6 1661
+76#define  NOTE_A6  1760
+77#define NOTE_AS6 1865
+78#define NOTE_B6  1976
+79#define NOTE_C7  2093
+80#define NOTE_CS7 2217
+81#define NOTE_D7  2349
+82#define NOTE_DS7 2489
+83#define  NOTE_E7  2637
+84#define NOTE_F7  2794
+85#define NOTE_FS7 2960
+86#define NOTE_G7  3136
+87#define NOTE_GS7 3322
+88#define NOTE_A7  3520
+89#define NOTE_AS7 3729
+90#define  NOTE_B7  3951
+91#define NOTE_C8  4186
+92#define NOTE_CS8 4435
+93#define NOTE_D8  4699
+94#define NOTE_DS8 4978
+95
+96int melody[] = {
+97  NOTE_AS4, NOTE_AS4,  NOTE_AS4, NOTE_AS4,
+98  NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4,
+99  NOTE_AS4,  NOTE_AS4, NOTE_AS4, NOTE_AS4,
+100  NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4,
+101  NOTE_AS4,  NOTE_AS4, NOTE_AS4, NOTE_AS4,
+102  NOTE_D5, NOTE_D5, NOTE_D5, NOTE_D5,
+103  NOTE_C5,  NOTE_C5, NOTE_C5, NOTE_C5, 
+104  NOTE_F5, NOTE_F5, NOTE_F5, NOTE_F5, 
+105  NOTE_G5,  NOTE_G5, NOTE_G5, NOTE_G5,
+106  NOTE_G5, NOTE_G5, NOTE_G5, NOTE_G5, 
+107  NOTE_G5,  NOTE_G5, NOTE_G5, NOTE_G5, 
+108  NOTE_C5, NOTE_AS4, NOTE_A4, NOTE_F4,
+109  NOTE_G4,  0, NOTE_G4, NOTE_D5,
+110  NOTE_C5, 0, NOTE_AS4, 0,
+111  NOTE_A4, 0, NOTE_A4, NOTE_A4,
+112  NOTE_C5, 0, NOTE_AS4, NOTE_A4, 
+113  NOTE_G4,0, NOTE_G4, NOTE_AS5,
+114  NOTE_A5,  NOTE_AS5, NOTE_A5, NOTE_AS5,
+115  NOTE_G4,0, NOTE_G4, NOTE_AS5,
+116  NOTE_A5, NOTE_AS5,  NOTE_A5, NOTE_AS5,
+117  NOTE_G4, 0, NOTE_G4, NOTE_D5,
+118  NOTE_C5, 0, NOTE_AS4,  0,
+119  NOTE_A4, 0, NOTE_A4, NOTE_A4,
+120  NOTE_C5, 0, NOTE_AS4, NOTE_A4, 
+121  NOTE_G4,0,  NOTE_G4, NOTE_AS5,
+122  NOTE_A5, NOTE_AS5, NOTE_A5, NOTE_AS5,
+123  NOTE_G4,0, NOTE_G4,  NOTE_AS5,
+124  NOTE_A5, NOTE_AS5, NOTE_A5, NOTE_AS5
+125 };
+126
+127// note durations:  4 = quarter note, 8 = eighth note, etc.:
+128int noteDurations[] = {
+129  4,4,4,4,
+130  4,4,4,4,
+131  4,4,4,4,
+132  4,4,4,4,
+133  4,4,4,4,
+134  4,4,4,4,
+135  4,4,4,4,
+136  4,4,4,4,
+137  4,4,4,4,
+138  4,4,4,4,
+139  4,4,4,4,
+140  4,4,4,4,
+141  4,4,4,4,
+142  4,4,4,4,
+143  4,4,4,4,
+144  4,4,4,4,
+145  4,4,4,4,
+146  4,4,4,4,
+147  4,4,4,4,
+148  4,4,4,4,
+149  4,4,4,4,
+150  4,4,4,4,
+151  4,4,4,4,
+152  4,4,4,4,
+153  4,4,4,4,
+154  4,4,4,4,
+155  4,4,4,4,
+156  4,4,4,4,
+157  };
+158
+159void setup() {
+160  for (int  thisNote = 0; thisNote < 112; thisNote++) {
+161
+162    int noteDuration = 750 /  noteDurations[thisNote];
+163    tone(8, melody[thisNote], noteDuration);
+164
+165    int pauseBetweenNotes = noteDuration * 1.30;
+166    delay(pauseBetweenNotes);
+167    
+168    noTone(8);
+169  }
+170}
+171
+172void loop() {
+173}
